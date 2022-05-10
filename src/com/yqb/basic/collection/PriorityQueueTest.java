@@ -16,6 +16,17 @@ public class PriorityQueueTest {
     };
     
 	public static void main(String[] args) {
+		
+		Queue<Integer> q1 = new PriorityQueue<>();
+		q1.add(1);
+		q1.add(2);
+		q1.add(3);
+		q1.add(4);
+		q1.add(5);
+		while(!q1.isEmpty()) {
+			System.out.println(q1.poll());
+		}
+		
 		Queue<Node> q = new PriorityQueue<>(cNode);
 		Node n1 = new Node(1, 2);
 		Node n2 = new Node(2, 5);
